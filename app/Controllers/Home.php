@@ -4,12 +4,9 @@ namespace App\Controllers;
 
 class Home extends BaseController {
     public function index() {
-        echo view('header');
-        echo view('body');
-        echo view('footer');
+        echo view('layouts/header');
+        echo view('layouts/body');
+        echo view('layouts/footer');
     }
 
-    public function detail() {
-        echo "ini halaman detail";
-    }
 }
