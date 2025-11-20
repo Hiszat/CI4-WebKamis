@@ -1,3 +1,6 @@
+<?= $this->extend('template'); ?>
+<?= $this->section('content'); ?>
+
 <table class="table">
     <thead>
         <tr>
@@ -28,3 +31,7 @@
         </tr>
     </tbody>
 </table>
+
+
+
+<?php $this->endSection(); ?>
