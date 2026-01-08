@@ -2,7 +2,6 @@
 <?= $this->section('content'); ?>
 
 <form>
-    asdasa
     <div class="mb-3">
         <label for="judul" class="form-label">Judul</label>
         <input type="text" class="form-control" id="judulu" name="judul_buku">
