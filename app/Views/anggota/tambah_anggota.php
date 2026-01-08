@@ -1,22 +1,18 @@
 <?= $this->extend('template'); ?>
 <?= $this->section('content'); ?>
 
-<form>
+<form method="post" action="<?= base_url('anggota/tambah'); ?>">
     <div class="mb-3">
-        <label for="judul" class="form-label">Judul</label>
-        <input type="text" class="form-control" id="judulu" name="judul_buku">
+        <label for="Nama" class="form-label">Nama</label>
+        <input type="text" class="form-control" id="Nama" name="nama_anggota">
     </div>
     <div class="mb-3">
-        <label for="Pengarang" class="form-label">Pengarang</label>
-        <input type="text" class="form-control" id="Pengarang" name="pengarang">
+        <label for="Alamat" class="form-label">Alamat</label>
+        <input type="text" class="form-control" id="Alamat" name="alamat">
     </div>
     <div class="mb-3">
-        <label for="Penerbit" class="form-label">Penerbit</label>
-        <input type="text" class="form-control" id="Penerbit" name="pengarang">
-    </div>
-    <div class="mb-3">
-        <label for="thnterbit" class="form-label">Tahun Terbit</label>
-        <input type="number" class="form-control" id="thnterbit" name="pengarang">
+        <label for="NoTelp" class="form-label">No. Telp</label>
+        <input type="text" class="form-control" id="NoTelp" name="telp">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

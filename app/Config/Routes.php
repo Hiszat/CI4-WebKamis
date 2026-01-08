@@ -12,3 +12,7 @@ $routes->get('/pages/about', 'Pages::about');
 
 $routes->get('/buku', 'Buku::index');
 $routes->get('/buku/tambah', 'Buku::tambah');
+
+$routes->get('/anggota', 'Anggota::index');
+$routes->get('/anggota/tambah', 'Anggota::tambah');
+$routes->post('/anggota/tambah', 'Anggota::tambah_angg');

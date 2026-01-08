@@ -1,6 +1,8 @@
 <?= $this->extend('template'); ?>
 <?= $this->section('content'); ?>
 
+<a href="<?= base_url('anggota/tambah'); ?>" class="btn btn-success">Tambah Anggota</a>
+
 <table class="table">
     <thead>
         <tr>
@@ -11,12 +13,21 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
+        <?php foreach ($anggota as $index => $a): ?>
+            <tr>
+                <th scope="row"><?= $index + 1; ?></th>
+                <td><?= $a['nama']; ?></td>
+                <td><?= $a['alamat']; ?></td>
+                <td><?= $a['telp']; ?></td>
+            </tr>
+
+        <?php endforeach; ?>
+        <!-- <tr>
             <th scope="row">1</th>
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
-        </tr>
+        </tr> -->
     </tbody>
 </table>
 
